@@ -1,0 +1,150 @@
+/* ==========VARIABLES========== */
+:root {
+    --bkg-color: rgb(44, 44, 44);
+    --nav-color: rgb(71, 71, 71);
+    --html-symbols-color: rgb(153, 153, 153);
+    --line-number-color: rgb(65, 64, 64);
+    --file-name-color:rgb(22, 22, 22);
+    --tag-color: rgb(92, 140, 202);
+    --attribute-color: rgb(116, 228, 243);
+    --value-color: rgb(196, 149, 63);
+    --tag-content-color: rgb(216, 216, 216);
+}
+
+/* ==========BODY========== */
+body {
+    margin: 0;
+    background-color: var(--bkg-color);
+    color: var(--html-symbols-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ==========CODE STYLING========== */
+.indent1 {
+    padding-left: .5rem !important;
+    margin-left: 1rem !important;
+    border-left: 1px solid var(--text-color);
+}
+
+.tag {
+    color: var(--tag-color);
+}
+
+.attribute {
+    color: var(--attribute-color);
+}
+
+.value {
+    color: var(--value-color);
+}
+
+.content {
+    color: var(--tag-content-color);
+}
+/* ==========NAVBAR MOBILE========== */
+.nav-mobile {
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-color);
+    height: 1.5rem;
+    position: relative;
+}
+
+.burger {
+    background-color: var(--nav-color);
+    height: 2rem;
+    width: 3rem;
+    margin-bottom: -1.8rem;
+    border-radius: 0 0 4px 4px;
+}
+
+/* ==========NAVBAR DESKTOP========== */
+.nav-desktop {
+
+}
+
+/* ==========GRID========== */
+.grid-container {
+    padding: 0 .5rem 0 0;
+    display: grid;
+    grid-template-columns: 10vw 1fr;
+    grid-template-areas:
+        "file-name file-name"
+        "l1 doctype"
+        "l2 html"
+        "l3 head-opening"
+        "l4 title"
+        "l5 link"
+        "l6 head-closing";
+}
+
+.grid-container p {
+    padding: .2em 0 .5em .5em;
+    margin: -1px 0 0;
+    overflow-wrap: anywhere;
+}
+
+.line-number {
+    background-color: var(--line-number-color);
+}
+
+.l1{
+    grid-area: l1;
+}
+.l2{
+    grid-area: l2;
+}
+.l3{
+    grid-area: l3;
+}
+.l4{
+    grid-area: l4;
+}
+.l5{
+    grid-area: l5;
+}
+.l6{
+    grid-area: l6;
+}
+
+.file-name{
+    grid-area: file-name;
+}
+
+.doctype{
+    grid-area: doctype;
+}
+
+.html{
+    grid-area: html;
+}
+
+.head-opening{
+    grid-area: head-opening;
+}
+
+.title{
+    grid-area: title;
+}
+
+.link{
+    grid-area: link;
+}
+
+.head-closing{
+    grid-area: head-closing;
+}
+
+p.file-name {
+    padding-top: 1.2rem;
+    padding-bottom: 1rem;
+    /*cancel body margin-right*/ 
+    margin-right: -0.5rem; 
+    background-color: var(--file-name-color);
+    text-align: center;
+}
+
+/* add some padding at the top of the grid */
+p.doctype, p.l1.line-number{
+    padding-top: 1rem;
+}
