@@ -23,7 +23,7 @@ body {
 .indent1 {
     padding-left: .5rem !important;
     margin-left: 1rem !important;
-    border-left: 1px solid var(--text-color);
+    border-left: 1px solid var(--html-symbols-color);
 }
 
 .tag {
