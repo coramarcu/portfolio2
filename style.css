@@ -2,7 +2,7 @@
 :root {
     --bkg-color: rgb(44, 44, 44);
     --nav-color: rgb(71, 71, 71);
-    --html-symbols-color: rgb(153, 153, 153);
+    --text-color: rgb(153, 153, 153);
     --line-number-color: rgb(65, 64, 64);
     --file-name-color:rgb(22, 22, 22);
     --tag-color: rgb(92, 140, 202);
@@ -15,15 +15,14 @@
 body {
     margin: 0;
     background-color: var(--bkg-color);
-    color: var(--html-symbols-color);
+    color: var(--text-color);
     font-family: 'Courier New', Courier, monospace;
 }
 
 /* ==========CODE STYLING========== */
-.indent1 {
-    padding-left: .5rem !important;
+.indent {
     margin-left: 1rem !important;
-    border-left: 1px solid var(--html-symbols-color);
+    border-left: 1px solid var(--text-color);
 }
 
 .tag {
@@ -67,7 +66,7 @@ body {
 .grid-container {
     padding: 0 .5rem 0 0;
     display: grid;
-    grid-template-columns: 10vw 1fr;
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1fr;
     grid-template-areas:
         "file-name file-name"
         "l1 doctype"
@@ -75,7 +74,13 @@ body {
         "l3 head-opening"
         "l4 title"
         "l5 link"
-        "l6 head-closing";
+        "l6 head-closing"
+        "l7 body-opening"
+        "l8 h1"
+        "l9 about-container-opening"
+        "l10 about-img"
+        "l11 about-p"
+        "l12 about-container-closing";
 }
 
 .grid-container p {
@@ -106,6 +111,26 @@ body {
 .l6{
     grid-area: l6;
 }
+.l7 {
+    grid-area: l7;
+}
+
+.l8 {
+    grid-area: l8;
+}
+
+.l9 {
+    grid-area: l9;
+}
+.l10 {
+    grid-area: l10;
+}
+.l11 {
+    grid-area: l11;
+}
+.l12 {
+    grid-area: l12;
+}
 
 .file-name{
     grid-area: file-name;
@@ -133,6 +158,14 @@ body {
 
 .head-closing{
     grid-area: head-closing;
+}
+
+.body-opening {
+    grid-area: body-opening;
+}
+
+.h1 {
+    grid-area: h1;
 }
 
 p.file-name {
