@@ -1,45 +1,81 @@
 /* ==========VARIABLES========== */
 :root {
-    --bkg-color: rgb(44, 44, 44);
+    --bkg-color: rgb(66, 66, 66);
+    --bkg-color-pop: rgb(71, 70, 70);
+    
     --nav-color: rgb(71, 71, 71);
-    --text-color: rgb(153, 153, 153);
-    --line-number-color: rgb(65, 64, 64);
     --file-name-color:rgb(22, 22, 22);
-    --tag-color: rgb(92, 140, 202);
-    --attribute-color: rgb(116, 228, 243);
-    --value-color: rgb(196, 149, 63);
-    --tag-content-color: rgb(216, 216, 216);
+    --line-number-color: rgb(65, 64, 64);
+
+    --text-color-faded: rgb(97, 97, 97);
+    --tag-color-faded: rgb(60, 85, 117);
+    --attribute-color-faded: rgb(65, 114, 121);
+    --value-color-faded: rgb(109, 85, 40);
+    --tag-content-color-faded: rgb(121, 121, 121);
+
+    --text-color-bright: rgb(153, 153, 153);
+    --tag-color-bright: rgb(92, 140, 202);
+    --attribute-color-bright: rgb(116, 228, 243);
+    --value-color-bright: rgb(196, 149, 63);
+    --tag-content-color-bright: rgb(216, 216, 216);
 }
 
 /* ==========BODY========== */
 body {
     margin: 0;
     background-color: var(--bkg-color);
-    color: var(--text-color);
+    color: var(--text-color-faded);
     font-family: 'Courier New', Courier, monospace;
 }
 
 /* ==========CODE STYLING========== */
 .indent {
-    margin-left: 1rem !important;
-    border-left: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color-faded);
+    margin-left: .5rem !important;
+    margin-top: -1rem;
 }
 
-.tag {
-    color: var(--tag-color);
+.child {
+    padding-left: 0 !important;
 }
 
-.attribute {
-    color: var(--attribute-color);
+.tag-faded {
+    color: var(--tag-color-faded);
 }
 
-.value {
-    color: var(--value-color);
+.tag-bright {
+    color: var(--tag-color-bright);
 }
 
-.content {
-    color: var(--tag-content-color);
+.attribute-faded {
+    color: var(--attribute-color-faded);
 }
+
+.value-faded {
+    color: var(--value-color-faded);
+}
+
+.content-faded {
+    color: var(--tag-content-color-faded);
+}
+
+.content-bright {
+    color: var(--tag-content-color-bright);
+}
+
+.txt-color-faded {
+    color: var(--text-color-faded);
+}
+
+.txt-color-bright {
+    color: var(--text-color-bright);
+}
+
+.pop {
+    background-color: var(--bkg-color-pop);
+    box-shadow: 0 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+
 /* ==========NAVBAR MOBILE========== */
 .nav-mobile {
     display: flex;
@@ -66,25 +102,27 @@ body {
 .grid-container {
     padding: 0 .5rem 0 0;
     display: grid;
-    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1fr;
-    grid-template-areas:
-        "file-name file-name"
-        "l1 doctype"
-        "l2 html"
-        "l3 head-opening"
-        "l4 title"
-        "l5 link"
-        "l6 head-closing"
-        "l7 body-opening"
-        "l8 h1"
-        "l9 about-container-opening"
-        "l10 about-img"
-        "l11 about-p"
-        "l12 about-container-closing";
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "file-name file-name file-name file-name"
+        "l1 doctype doctype doctype"
+        "l2 html html html"
+        "l3 head-opening head-opening head-opening"
+        "l4 . title title"
+        "l5 . link link"
+        "l6 head-closing head-closing head-closing"
+        "l7 body-opening body-opening body-opening"
+        "l8 . h1 h1"
+        "l9 . about-container-opening about-container-opening"
+        "l10 . . about-img"
+        "l11 . . about-p"
+        "l12 . about-container-closing about-container-closing"
+        "l13 body-closing body-closing body-closing";
 }
 
 .grid-container p {
-    padding: .2em 0 .5em .5em;
+    padding: .2em 0 0em .5em;
     margin: -1px 0 0;
     overflow-wrap: anywhere;
 }
@@ -132,6 +170,10 @@ body {
     grid-area: l12;
 }
 
+.l13 {
+    grid-area: l13;
+}
+
 .file-name{
     grid-area: file-name;
 }
@@ -166,6 +208,26 @@ body {
 
 .h1 {
     grid-area: h1;
+}
+
+.about-container-opening {
+    grid-area: about-container-opening;
+}
+
+.about-img {
+    grid-area: about-img;
+}
+
+.about-p {
+    grid-area: about-p;
+}
+
+.about-container-closing {
+    grid-area: about-container-closing;
+}
+
+.body-closing {
+    grid-area: body-closing;
 }
 
 p.file-name {
