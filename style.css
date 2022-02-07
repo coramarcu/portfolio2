@@ -3,9 +3,9 @@
     --bkg-color: rgb(44, 44, 44);
     --bkg-color-pop: rgb(80, 80, 80);
     
-    --nav-color: rgb(71, 71, 71);
-    --file-name-color:rgb(22, 22, 22);
-    --line-number-color: rgb(65, 64, 64);
+    --nav-color: rgb(49, 49, 49);
+    --file-name-color:rgb(31, 30, 30);
+    --line-number-color: rgb(61, 61, 61);
 
     --text-color-faded: rgb(97, 97, 97);
     --tag-color-faded: rgb(60, 85, 117);
@@ -85,24 +85,69 @@ body {
 }
 
 /* ==========NAVBAR MOBILE========== */
-.nav-mobile {
+nav {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     background-color: var(--nav-color);
-    height: 1.5rem;
-    position: relative;
+    position: relative; 
 }
 
-.burger {
+.nav-ul {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+.nav-ul.show {
+    display: flex;
+    flex-direction: column;
+}
+.nav-ul li {
+    margin: .75em .75em;
+}
+
+.nav-ul li:last-child {
+    margin-bottom: 0;
+}
+
+.nav-ul li a {
+    color: var(--text-color-bright);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+.hamburger {
+    border: 0;
+    color: var(--text-color-bright);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: -0.8rem;
     background-color: var(--nav-color);
-    height: 2rem;
-    width: 3rem;
-    margin-bottom: -1.8rem;
-    border-radius: 0 0 4px 4px;
+    padding: .1em .3em;
+    border-radius: 3px;
 }
 
 /* ==========NAVBAR DESKTOP========== */
+@media screen and (min-width: 481px){ 
+    .hamburger {
+        display: none;
+    }
 
+    .nav-ul {
+        display: flex;
+    }
+
+    .nav-ul li a {
+        display: inline-block;
+        color: var(--text-color-bright);
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+    }
+}
 
 /* ==========GRID========== */
 .grid-container {
@@ -122,9 +167,13 @@ body {
         "l8 . h1 h1"
         "l9 . about-container-opening about-container-opening"
         "l10 . . about-img"
-        "l11 . . about-p"
-        "l12 . about-container-closing about-container-closing"
-        "l13 body-closing body-closing body-closing";
+        "l11 . . about-p1"
+        "l12 . . about-br1"
+        "l13 . . about-br2"
+        "l14 . . about-p2"
+        "l15 . about-container-closing about-container-closing"
+        "l16 body-closing body-closing body-closing";
+        
 }
 
 .grid-container p {
@@ -180,6 +229,18 @@ body {
     grid-area: l13;
 }
 
+.l14 {
+    grid-area: l14;
+}
+
+.l15 {
+    grid-area: l15;
+}
+
+.l16 {
+    grid-area: l16;
+}
+
 .file-name{
     grid-area: file-name;
 }
@@ -224,8 +285,16 @@ body {
     grid-area: about-img;
 }
 
-.about-p {
-    grid-area: about-p;
+.about-p1 {
+    grid-area: about-p1;
+}
+
+.about-br1 {
+    grid-area: about-br1;
+}
+
+.about-br2 {
+    grid-area: about-br2;
 }
 
 .about-container-closing {
@@ -236,13 +305,19 @@ body {
     grid-area: body-closing;
 }
 
+
 p.file-name {
-    padding-top: 1.2rem;
+    padding-top: 1.5rem;
     padding-bottom: 1rem;
     /*cancel body margin-right*/ 
     margin-right: -0.5rem; 
     background-color: var(--file-name-color);
     text-align: center;
+    color: var(--modal-txt-color);
+}
+
+.icon-html {
+    color: var(--modal-accent);
 }
 
 /* add some padding at the top of the grid */

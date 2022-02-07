@@ -30,3 +30,11 @@ function closeModal(modal) {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+// ==========NAV BAR==========
+const hamburger = document.getElementById('hamburger')
+const navUl = document.getElementById("nav-ul")
+
+hamburger.addEventListener('click', () => {
+    navUl.classList.toggle('show')
+})
