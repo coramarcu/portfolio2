@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cora Marcu's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 <body>
     <nav class="nav-mobile">
@@ -73,7 +75,7 @@
             &#60<span class="tag-faded">body</span>&#62
         </p>
 
-        <p class="h1 child pop">
+        <p data-modal-target="#modal" class="h1 child pop">
             <span class="txt-color-bright">&#60</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span><span class="content-bright">About Me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span>
         </p>
 
@@ -86,7 +88,19 @@
         </p>
 
         <p class="about-p child">
-            &#60<span class="tag-faded">p</span><span class="content-faded"> For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Java</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span>,<span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">JavaScript</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span>, <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">HTML</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span> and <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">CSS</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="span txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>
+            &#60<span class="tag-faded">p</span><span class="content-faded"> Hi! My name is <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Cora</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span>.
+
+            <br> 
+
+            <span class="txt-color-faded">&#60</span><span class="tag-faded">br<span class="txt-color-faded">&#62</span>
+
+            <br>
+
+            <span class="txt-color-faded">&#60</span><span class="tag-faded">br<span class="txt-color-faded">&#62</span>
+
+            <br>
+
+            <span class="content-faded">For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with </span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Java</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span>,<span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">JavaScript</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span>, <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">HTML</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span> and <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">CSS</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="span txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>
         </p>
 
         <p class="about-container-closing">
@@ -95,10 +109,33 @@
 
         <p class="body-closing">
             &#60/<span class="tag-faded">body</span>&#62
+
+            <!-- ==========TESTING STYLING CODE========== -->
+            
+
         </p>
+
  
 
-        
+        <!-- ==========MODALS========== -->
+        <div class="modal" id="modal">
+
+            <div class="modal-head">
+                <img class="profile-pic" src="pics/Cora.png" alt="A selfie of me with short blonde hair and wearing blue-framed glasses.">
+                <button data-close-button class="close-button modal-txt-color">&times;</button>
+            </div>
+                
+
+            <div class="modal-body">
+                Hi! My name is <span class="modal-accent">Cora</span>.
+                <br>
+                <br>
+                For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with <span class="modal-accent">Java</span>, <span class="modal-accent">JavaScript</span>, <span class="modal-accent">HTML</span> and <span class="modal-accent">CSS</span>.
+            </div>
+        </div>
+        <div id="overlay"></div>
     </div>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
