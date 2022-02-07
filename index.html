@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cora Marcu's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8569db0251.js" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
-    <nav class="nav-mobile">
-        <div class="burger">
+    <nav>
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
 
-        </div>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href="#about">about.html</a></li>
+            <li><a href="#skills">skills.css</a></li>
+            <li><a href="#projects">projects.js</a></li>
+            <li><a href="#contact">contact.zsh</a></li>
+        </ul>
     </nav>
 
     <div class="grid-container">
@@ -51,7 +59,7 @@
 
 
         <p class="file-name">
-            &#60&#62about.html
+            <span class="icon-html">&#60&#62</span>about.html
         </p>
         <p class="doctype">
             &#60<span class="tag-faded">!DOCTYPE </span><span class="attribute-faded">html</span>&#62
