@@ -122,9 +122,13 @@ body {
         "l8 . h1 h1"
         "l9 . about-container-opening about-container-opening"
         "l10 . . about-img"
-        "l11 . . about-p"
-        "l12 . about-container-closing about-container-closing"
-        "l13 body-closing body-closing body-closing";
+        "l11 . . about-p1"
+        "l12 . . about-br1"
+        "l13 . . about-br2"
+        "l14 . . about-p2"
+        "l15 . about-container-closing about-container-closing"
+        "l16 body-closing body-closing body-closing";
+        
 }
 
 .grid-container p {
@@ -180,6 +184,18 @@ body {
     grid-area: l13;
 }
 
+.l14 {
+    grid-area: l14;
+}
+
+.l15 {
+    grid-area: l15;
+}
+
+.l16 {
+    grid-area: l16;
+}
+
 .file-name{
     grid-area: file-name;
 }
@@ -224,8 +240,16 @@ body {
     grid-area: about-img;
 }
 
-.about-p {
-    grid-area: about-p;
+.about-p1 {
+    grid-area: about-p1;
+}
+
+.about-br1 {
+    grid-area: about-br1;
+}
+
+.about-br2 {
+    grid-area: about-br2;
 }
 
 .about-container-closing {
@@ -235,6 +259,7 @@ body {
 .body-closing {
     grid-area: body-closing;
 }
+
 
 p.file-name {
     padding-top: 1.2rem;
