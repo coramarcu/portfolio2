@@ -1,46 +1,89 @@
 /* ==========VARIABLES========== */
 :root {
     --bkg-color: rgb(44, 44, 44);
+    --bkg-color-pop: rgb(80, 80, 80);
+    
     --nav-color: rgb(71, 71, 71);
-    --html-symbols-color: rgb(153, 153, 153);
-    --line-number-color: rgb(65, 64, 64);
     --file-name-color:rgb(22, 22, 22);
-    --tag-color: rgb(92, 140, 202);
-    --attribute-color: rgb(116, 228, 243);
-    --value-color: rgb(196, 149, 63);
-    --tag-content-color: rgb(216, 216, 216);
+    --line-number-color: rgb(65, 64, 64);
+
+    --text-color-faded: rgb(97, 97, 97);
+    --tag-color-faded: rgb(60, 85, 117);
+    --attribute-color-faded: rgb(65, 114, 121);
+    --value-color-faded: rgb(109, 85, 40);
+    --tag-content-color-faded: rgb(121, 121, 121);
+
+    --text-color-bright: rgb(165, 165, 165);
+    --tag-color-bright: rgb(99, 149, 214);
+    --attribute-color-bright: rgb(134, 241, 255);
+    --value-color-bright: rgb(221, 173, 82);
+    --tag-content-color-bright: rgb(235, 235, 235);
+
+    --modal-overlay-color: rgba(10, 0, 0, .5);
+    --modal-txt-color: wheat;
+    --modal-accent: rgb(255, 165, 0);
 }
 
 /* ==========BODY========== */
 body {
     margin: 0;
     background-color: var(--bkg-color);
-    color: var(--html-symbols-color);
+    color: var(--text-color-faded);
     font-family: 'Courier New', Courier, monospace;
 }
 
 /* ==========CODE STYLING========== */
-.indent1 {
-    padding-left: .5rem !important;
-    margin-left: 1rem !important;
-    border-left: 1px solid var(--html-symbols-color);
+.indent {
+    border-left: 1px solid var(--text-color-faded);
+    margin-left: .5rem !important;
+    margin-top: -1rem;
 }
 
-.tag {
-    color: var(--tag-color);
+.child {
+    padding-left: 0 !important;
 }
 
-.attribute {
-    color: var(--attribute-color);
+.tag-faded {
+    color: var(--tag-color-faded);
 }
 
-.value {
-    color: var(--value-color);
+.tag-bright {
+    color: var(--tag-color-bright);
 }
 
-.content {
-    color: var(--tag-content-color);
+.attribute-faded {
+    color: var(--attribute-color-faded);
 }
+
+.value-faded {
+    color: var(--value-color-faded);
+}
+
+.content-faded {
+    color: var(--tag-content-color-faded);
+}
+
+.content-bright {
+    color: var(--tag-content-color-bright);
+}
+
+.txt-color-faded {
+    color: var(--text-color-faded);
+}
+
+.txt-color-bright {
+    color: var(--text-color-bright);
+}
+
+.modal-txt-color {
+    color: var(--modal-txt-color);
+}
+
+.pop {
+    background-color: var(--bkg-color-pop);
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
 /* ==========NAVBAR MOBILE========== */
 .nav-mobile {
     display: flex;
@@ -59,27 +102,33 @@ body {
 }
 
 /* ==========NAVBAR DESKTOP========== */
-.nav-desktop {
 
-}
 
 /* ==========GRID========== */
 .grid-container {
     padding: 0 .5rem 0 0;
     display: grid;
-    grid-template-columns: 10vw 1fr;
-    grid-template-areas:
-        "file-name file-name"
-        "l1 doctype"
-        "l2 html"
-        "l3 head-opening"
-        "l4 title"
-        "l5 link"
-        "l6 head-closing";
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "file-name file-name file-name file-name"
+        "l1 doctype doctype doctype"
+        "l2 html html html"
+        "l3 head-opening head-opening head-opening"
+        "l4 . title title"
+        "l5 . link link"
+        "l6 head-closing head-closing head-closing"
+        "l7 body-opening body-opening body-opening"
+        "l8 . h1 h1"
+        "l9 . about-container-opening about-container-opening"
+        "l10 . . about-img"
+        "l11 . . about-p"
+        "l12 . about-container-closing about-container-closing"
+        "l13 body-closing body-closing body-closing";
 }
 
 .grid-container p {
-    padding: .2em 0 .5em .5em;
+    padding: .2em 0 0em .5em;
     margin: -1px 0 0;
     overflow-wrap: anywhere;
 }
@@ -105,6 +154,30 @@ body {
 }
 .l6{
     grid-area: l6;
+}
+.l7 {
+    grid-area: l7;
+}
+
+.l8 {
+    grid-area: l8;
+}
+
+.l9 {
+    grid-area: l9;
+}
+.l10 {
+    grid-area: l10;
+}
+.l11 {
+    grid-area: l11;
+}
+.l12 {
+    grid-area: l12;
+}
+
+.l13 {
+    grid-area: l13;
 }
 
 .file-name{
@@ -135,6 +208,34 @@ body {
     grid-area: head-closing;
 }
 
+.body-opening {
+    grid-area: body-opening;
+}
+
+.h1 {
+    grid-area: h1;
+}
+
+.about-container-opening {
+    grid-area: about-container-opening;
+}
+
+.about-img {
+    grid-area: about-img;
+}
+
+.about-p {
+    grid-area: about-p;
+}
+
+.about-container-closing {
+    grid-area: about-container-closing;
+}
+
+.body-closing {
+    grid-area: body-closing;
+}
+
 p.file-name {
     padding-top: 1.2rem;
     padding-bottom: 1rem;
@@ -147,4 +248,77 @@ p.file-name {
 /* add some padding at the top of the grid */
 p.doctype, p.l1.line-number{
     padding-top: 1rem;
+}
+
+
+/* ==========MODALS========== */
+/* ==========modal========== */
+.profile-pic {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.modal {
+    box-sizing: border-box;
+    width: 90vw;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: var(--bkg-color-pop);
+    padding: 1.5rem ;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-head {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.modal-head .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.modal-body {
+    color: wheat;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--modal-overlay-color);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-accent {
+    color: var(--modal-accent);
 }
