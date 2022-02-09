@@ -172,7 +172,8 @@ nav {
         "l13 . . about-br2"
         "l14 . . about-p2"
         "l15 . about-container-closing about-container-closing"
-        "l16 body-closing body-closing body-closing";
+        "l16 . contact-p contact-p"
+        "l17 body-closing body-closing body-closing";
         
 }
 
@@ -241,6 +242,10 @@ nav {
     grid-area: l16;
 }
 
+.l17 {
+    grid-area: l17;
+}
+
 .file-name{
     grid-area: file-name;
 }
@@ -299,6 +304,10 @@ nav {
 
 .about-container-closing {
     grid-area: about-container-closing;
+}
+
+.contact-p {
+    grid-area: contact-p;
 }
 
 .body-closing {
