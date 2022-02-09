@@ -94,7 +94,7 @@
             &#60<span class="tag-faded">body</span>&#62
         </p>
 
-        <p data-modal-target="#modal" class="h1 child pop">
+        <p data-modal-target="#about-modal" class="h1 child pop">
             <span class="txt-color-bright">&#60</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span><span class="content-bright">About Me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span>
         </p>
 
@@ -126,7 +126,7 @@
             &#60/<span class="tag-faded">div</span>&#62
         </p>
 
-        <p class="contact-p child pop">
+        <p data-modal-target="#contact-modal" class="contact-p child pop">
             <span class="txt-color-bright">&#60</span><span class="tag-bright">btton </span><span class="attribute-bright">class=</span><span class="value-color-bright">"contact-btn"</span><span class="txt-color-bright">&#62</span><span class="content-bright">Contact me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">span<span class="txt-color-bright">&#62</span>
         </p>
 
@@ -136,7 +136,8 @@
         
  
         <!-- ==========MODALS========== -->
-        <div class="modal" id="modal">
+        <!-- ==========about modal========== -->
+        <div class="modal" id="about-modal">
 
             <div class="modal-head">
                 <img class="profile-pic" src="pics/Cora.png" alt="A selfie of me with short blonde hair and wearing blue-framed glasses.">
@@ -152,6 +153,33 @@
             </div>
         </div>
         <div id="overlay"></div>
+
+        <!-- ==========about modal========== -->
+        <div class="modal" id="contact-modal">
+
+            <div class="modal-head">
+                <h2 class="modal-contact-h2">Get in touch</h2>
+                <button data-close-button class="close-button modal-txt-color">&times;</button>
+            </div>
+                
+
+            <div class="modal-body">
+                <form>
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Your email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="message">Your message:</label>
+                    <textarea name="message" id="message" rows="10"></textarea>
+
+                    <input type="submit" value="Send" name="submit" id="submit">
+                </form>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
     </div>
 
     <script type="text/javascript" src="script.js"></script>

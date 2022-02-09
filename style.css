@@ -30,6 +30,7 @@ body {
     background-color: var(--bkg-color);
     color: var(--text-color-faded);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 
 /* ==========CODE STYLING========== */
@@ -413,7 +414,7 @@ p.doctype, p.l1.line-number{
 
 
 /* ==========MODALS========== */
-/* ==========modal========== */
+/* ==========about-modal========== */
 .profile-pic {
     width: 7rem;
     height: 7rem;
@@ -434,7 +435,7 @@ p.doctype, p.l1.line-number{
     border-radius: 10px;
     z-index: 10;
     background-color: var(--bkg-color-pop);
-    padding: 1.5rem ;
+    padding: 1rem ;
 }
 
 .modal.active {
@@ -460,7 +461,8 @@ p.doctype, p.l1.line-number{
 }
 
 .modal-body {
-    color: wheat;
+    color: var(--modal-txt-color);
+    padding: .3em;
 }
 
 #overlay {
@@ -482,4 +484,27 @@ p.doctype, p.l1.line-number{
 
 .modal-accent {
     color: var(--modal-accent);
+}
+
+/* ==========contact-modal========== */
+.modal-contact-h2 {
+    color: var(--modal-accent);
+}
+
+.modal-body form input, 
+.modal-body form textarea {
+    margin: .3em 0 2em 0;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 2.5em;
+}
+
+.modal-body form #submit {
+    background-color: var(--modal-accent);
+    color: var(--bkg-color-pop);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0;
 }
