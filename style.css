@@ -2,26 +2,22 @@
 :root {
     --bkg-color: rgb(44, 44, 44);
     --bkg-color-pop: rgb(80, 80, 80);
-    
     --nav-color: rgb(49, 49, 49);
-    --file-name-color:rgb(31, 30, 30);
+    --file-name-color: rgb(31, 30, 30);
     --line-number-color: rgb(61, 61, 61);
-
-    --text-color-faded: rgb(97, 97, 97);
-    --tag-color-faded: rgb(60, 85, 117);
-    --attribute-color-faded: rgb(65, 114, 121);
-    --value-color-faded: rgb(109, 85, 40);
-    --tag-content-color-faded: rgb(121, 121, 121);
-
-    --text-color-bright: rgb(165, 165, 165);
-    --tag-color-bright: rgb(99, 149, 214);
-    --attribute-color-bright: rgb(134, 241, 255);
-    --value-color-bright: rgb(221, 173, 82);
-    --tag-content-color-bright: rgb(235, 235, 235);
-
+    --text-color-faded: rgb(124 121 121);
+    --tag-color-faded: rgb(80 120 167);
+    --attribute-color-faded: rgb(81 146 154);
+    --value-color-faded: rgb(158 122 53);
+    --tag-content-color-faded: rgb(143 143 143);
+    --text-color-bright: rgb(210 210 210);
+    --tag-color-bright: rgb(86 160 255);
+    --attribute-color-bright: rgb(94 236 255);
+    --value-color-bright: rgb(244 195 100);
+    --tag-content-color-bright: rgb(255 255 255);
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: wheat;
-    --modal-accent: rgb(255, 165, 0);
+    --modal-accent: rgb(255 165 0);
 }
 
 /* ==========BODY========== */
@@ -30,6 +26,7 @@ body {
     background-color: var(--bkg-color);
     color: var(--text-color-faded);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
 }
 
 /* ==========CODE STYLING========== */
@@ -55,8 +52,16 @@ body {
     color: var(--attribute-color-faded);
 }
 
+.attribute-bright {
+    color: var(--attribute-color-bright);
+}
+
 .value-faded {
     color: var(--value-color-faded);
+}
+
+.value-bright {
+    color: var(--value-color-bright);
 }
 
 .content-faded {
@@ -80,8 +85,12 @@ body {
 }
 
 .pop {
-    background-color: var(--bkg-color-pop);
+    /* background-color: var(--bkg-color-pop); */
     box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pop * {
+    font-weight: bold;
 }
 
 /* ==========NAVBAR MOBILE========== */
@@ -160,19 +169,20 @@ nav {
         "l1 doctype doctype doctype"
         "l2 html html html"
         "l3 head-opening head-opening head-opening"
-        "l4 . title title"
-        "l5 . link link"
+        "l4 i1 title title"
+        "l5 i2 link link"
         "l6 head-closing head-closing head-closing"
         "l7 body-opening body-opening body-opening"
-        "l8 . h1 h1"
-        "l9 . about-container-opening about-container-opening"
-        "l10 . . about-img"
-        "l11 . . about-p1"
-        "l12 . . about-br1"
-        "l13 . . about-br2"
-        "l14 . . about-p2"
-        "l15 . about-container-closing about-container-closing"
-        "l16 body-closing body-closing body-closing";
+        "l8 i3 h1 h1"
+        "l9 i4 about-container-opening about-container-opening"
+        "l10 i5 i6 about-img"
+        "l11 i7 i8 about-p1"
+        "l12 i9 i10 about-br1"
+        "l13 i11 i12 about-br2"
+        "l14 i13 i14 about-p2"
+        "l15 i15 about-container-closing about-container-closing"
+        "l16 i16 contact-p contact-p"
+        "l17 body-closing body-closing body-closing";
         
 }
 
@@ -241,6 +251,75 @@ nav {
     grid-area: l16;
 }
 
+.l17 {
+    grid-area: l17;
+}
+
+
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4 {
+    grid-area: i4;
+}
+
+.i5 {
+    grid-area: i5;
+}
+
+.i6 {
+    grid-area: i6;
+}
+
+.i7 {
+    grid-area: i7;
+}
+
+.i8 {
+    grid-area: i8;
+}
+
+.i9 {
+    grid-area: i9;
+}
+
+.i10 {
+    grid-area: i10;
+}
+
+.i11 {
+    grid-area: i11;
+}
+
+.i12 {
+    grid-area: i12;
+}
+
+.i13 {
+    grid-area: i13;
+}
+
+.i14 {
+    grid-area: i14;
+}
+
+.i15 {
+    grid-area: i15;
+}
+
+.i16 {
+    grid-area: i16;
+}
+
 .file-name{
     grid-area: file-name;
 }
@@ -301,6 +380,10 @@ nav {
     grid-area: about-container-closing;
 }
 
+.contact-p {
+    grid-area: contact-p;
+}
+
 .body-closing {
     grid-area: body-closing;
 }
@@ -327,7 +410,7 @@ p.doctype, p.l1.line-number{
 
 
 /* ==========MODALS========== */
-/* ==========modal========== */
+/* ==========about-modal========== */
 .profile-pic {
     width: 7rem;
     height: 7rem;
@@ -348,7 +431,7 @@ p.doctype, p.l1.line-number{
     border-radius: 10px;
     z-index: 10;
     background-color: var(--bkg-color-pop);
-    padding: 1.5rem ;
+    padding: 1rem ;
 }
 
 .modal.active {
@@ -374,7 +457,8 @@ p.doctype, p.l1.line-number{
 }
 
 .modal-body {
-    color: wheat;
+    color: var(--modal-txt-color);
+    padding: .3em;
 }
 
 #overlay {
@@ -396,4 +480,27 @@ p.doctype, p.l1.line-number{
 
 .modal-accent {
     color: var(--modal-accent);
+}
+
+/* ==========contact-modal========== */
+.modal-contact-h2 {
+    color: var(--modal-accent);
+}
+
+.modal-body form input, 
+.modal-body form textarea {
+    margin: .3em 0 2em 0;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    min-height: 2.5em;
+}
+
+.modal-body form #submit {
+    background-color: var(--modal-accent);
+    color: var(--bkg-color-pop);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 0;
 }
