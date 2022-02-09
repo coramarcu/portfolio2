@@ -2,26 +2,22 @@
 :root {
     --bkg-color: rgb(44, 44, 44);
     --bkg-color-pop: rgb(80, 80, 80);
-    
     --nav-color: rgb(49, 49, 49);
-    --file-name-color:rgb(31, 30, 30);
+    --file-name-color: rgb(31, 30, 30);
     --line-number-color: rgb(61, 61, 61);
-
-    --text-color-faded: rgb(97, 97, 97);
-    --tag-color-faded: rgb(60, 85, 117);
-    --attribute-color-faded: rgb(65, 114, 121);
-    --value-color-faded: rgb(109, 85, 40);
-    --tag-content-color-faded: rgb(121, 121, 121);
-
-    --text-color-bright: rgb(165, 165, 165);
-    --tag-color-bright: rgb(99, 149, 214);
-    --attribute-color-bright: rgb(134, 241, 255);
-    --value-color-bright: rgb(221, 173, 82);
-    --tag-content-color-bright: rgb(235, 235, 235);
-
+    --text-color-faded: rgb(124 121 121);
+    --tag-color-faded: rgb(80 120 167);
+    --attribute-color-faded: rgb(81 146 154);
+    --value-color-faded: rgb(158 122 53);
+    --tag-content-color-faded: rgb(143 143 143);
+    --text-color-bright: rgb(210 210 210);
+    --tag-color-bright: rgb(86 160 255);
+    --attribute-color-bright: rgb(94 236 255);
+    --value-color-bright: rgb(244 195 100);
+    --tag-content-color-bright: rgb(255 255 255);
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: wheat;
-    --modal-accent: rgb(255, 165, 0);
+    --modal-accent: rgb(255 165 0);
 }
 
 /* ==========BODY========== */
@@ -60,11 +56,11 @@ body {
     color: var(--attribute-color-bright);
 }
 
-.value-color-faded {
+.value-faded {
     color: var(--value-color-faded);
 }
 
-.value-color-bright {
+.value-bright {
     color: var(--value-color-bright);
 }
 
