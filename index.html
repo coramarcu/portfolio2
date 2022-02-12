@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,178 +11,211 @@
 
 </head>
 <body>
-    <nav>
+    <!-- ==========ABOUT SECTION========== -->
+
+    <nav class="navigation">
         <button class="hamburger" id="hamburger">
             <i class="fas fa-bars"></i>
         </button>
 
         <ul class="nav-ul" id="nav-ul">
-            <li><a href="index.html">about.html</a></li>
-            <li><a href="skills.html">skills.css</a></li>
-            <li><a href="projects.html">projects.js</a></li>
-            <li><a href="contact.html">contact.zsh</a></li>
+            <li><span class="icon-html">&#60&#62 </span><a href="index.html">about.html</a></li>
+            <li><span class="icon-css"># </span><a href="skills.html">skills.css</a></li>
+            <li><span class="icon-js">JS </span><a href="projects.html">projects.js</a></li>
+            <li><span class="icon-zsh">~ </span><a href="contact.html">contact.zsh</a></li>
         </ul>
     </nav>
 
-    <div class="grid-container">
-        <p class="l1 line-number">1</p>
-        <p class="l2 line-number">2</p>
-        <p class="l3 line-number">3</p>
-        <p class="l4 line-number">4</p>
-        <p class="l5 line-number">5</p>
-        <p class="l6 line-number">6</p>
-        <p class="l7 line-number">7</p>
-        <p class="l8 line-number">8</p>
-        <p class="l9 line-number">9</p>
-        <p class="l10 line-number">10</p>
-        <p class="l11 line-number">11</p>
-        <p class="l12 line-number">12</p>
-        <p class="l13 line-number">13</p>
-        <p class="l14 line-number">14</p>
-        <p class="l15 line-number">15</p>
-        <p class="l16 line-number">16</p>
-        <p class="l17 line-number">17</p>
-
-        <p class="indent i1"></p>
-        <p class="indent i2"></p>
-        <p class="indent i3"></p>
-        <p class="indent i4"></p>
-        <p class="indent i5"></p>
-        <p class="indent i6"></p>
-        <p class="indent i7"></p>
-        <p class="indent i8"></p>
-        <p class="indent i9"></p>
-        <p class="indent i10"></p>
-        <p class="indent i11"></p>
-        <p class="indent i12"></p>
-        <p class="indent i13"></p>
-        <p class="indent i14"></p>
-        <p class="indent i15"></p>
-        <p class="indent i16"></p>
-
-
-        <p class="file-name">
-            <span class="icon-html">&#60&#62</span>about.html
-        </p>
-        <p class="doctype">
-            &#60<span class="tag-faded">!DOCTYPE </span><span class="attribute-faded">html</span>&#62
-        </p>
-
-        <p class="html">
-            &#60<span class="tag-faded">html</span> <span class="attribute-faded">lang=</span><span class="value-faded">"en"</span>&#62
-        </p>
-
-        <p class="head-opening">
-            &#60<span class="tag-faded">head</span>&#62
-        </p>
-
-        <p class="title child">
-            &#60<span class="tag-faded">title</span>&#62<span class="content-faded">Cora Marcu's Portfolio</span>&#60/<span class="tag-faded">title</span>&#62
-        </p>
+    <section class="about-section">
         
+        <div class="grid-container">
+            <p class="l1 line-number">1</p>
+            <p class="l2 line-number">2</p>
+            <p class="l3 line-number">3</p>
+            <p class="l4 line-number">4</p>
+            <p class="l5 line-number">5</p>
+            <p class="l6 line-number">6</p>
+            <p class="l7 line-number">7</p>
+            <p class="l8 line-number">8</p>
+            <p class="l9 line-number">9</p>
+            <p class="l10 line-number">10</p>
+            <p class="l11 line-number">11</p>
+            <p class="l12 line-number">12</p>
+            <p class="l13 line-number">13</p>
+            <p class="l14 line-number">14</p>
+            <p class="l15 line-number">15</p>
+            <p class="l16 line-number">16</p>
+            <p class="l17 line-number">17</p>
 
-        <p class="link child"> 
-            &#60<span class="tag-faded">link</span> <span class="attribute-faded">rel=</span><span class="value-faded">"stylesheet"</span> <span class="attribute-faded">href=</span><span class="value-faded">"projects.css"</span>&#62
-        </p>
+            <p class="indent i1"></p>
+            <p class="indent i2"></p>
+            <p class="indent i3"></p>
+            <p class="indent i4"></p>
+            <p class="indent i5"></p>
+            <p class="indent i6"></p>
+            <p class="indent i7"></p>
+            <p class="indent i8"></p>
+            <p class="indent i9"></p>
+            <p class="indent i10"></p>
+            <p class="indent i11"></p>
+            <p class="indent i12"></p>
+            <p class="indent i13"></p>
+            <p class="indent i14"></p>
+            <p class="indent i15"></p>
+            <p class="indent i16"></p>
 
-        <p class="head-closing">
-            &#60/<span class="tag-faded">head</span>&#62
-        </p>
+
+            <p class="about-file-name file-name">
+                <span class="icon-html">&#60&#62</span>about.html
+            </p>
+            <p class="doctype">
+                &#60<span class="tag-faded">!DOCTYPE </span><span class="attribute-faded">html</span>&#62
+            </p>
+
+            <p class="html">
+                &#60<span class="tag-faded">html</span> <span class="attribute-faded">lang=</span><span class="value-faded">"en"</span>&#62
+            </p>
+
+            <p class="head-opening">
+                &#60<span class="tag-faded">head</span>&#62
+            </p>
+
+            <p class="title child">
+                &#60<span class="tag-faded">title</span>&#62<span class="content-faded">Cora Marcu's Portfolio</span>&#60/<span class="tag-faded">title</span>&#62
+            </p>
+            
+
+            <p class="link child"> 
+                &#60<span class="tag-faded">link</span> <span class="attribute-faded">rel=</span><span class="value-faded">"stylesheet"</span> <span class="attribute-faded">href=</span><span class="value-faded">"projects.css"</span>&#62
+            </p>
+
+            <p class="head-closing">
+                &#60/<span class="tag-faded">head</span>&#62
+            </p>
 
 
 
-        <p class="body-opening">
-            &#60<span class="tag-faded">body</span>&#62
-        </p>
+            <p class="body-opening">
+                &#60<span class="tag-faded">body</span>&#62
+            </p>
 
-        <p data-modal-target="#about-modal" class="h1 child pop">
-            <span class="txt-color-bright">&#60</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span><span class="content-bright">About Me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span>
-        </p>
+            <p data-modal-target="#about-modal" class="h1 child pop">
+                <span class="txt-color-bright">&#60</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span><span class="content-bright">About Me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">h1</span><span class="txt-color-bright">&#62</span>
+            </p>
 
-        <p class="about-container-opening child">
-            &#60<span class="tag-faded">div</span>&#62 <span class="attribute-faded">class=</span><span class="value-faded">"about-container</span>&#62
-        </p>
+            <p class="about-container-opening child">
+                &#60<span class="tag-faded">div</span>&#62 <span class="attribute-faded">class=</span><span class="value-faded">"about-container</span>&#62
+            </p>
 
-        <p class="about-img child">
-            &#60<span class="tag-faded">img</span> <span class="attribute-faded">src=</span><span class="value-faded">"./pics/Cora-Profile-Pic.jpg"</span> <span class="attribute-faded">alt=</span><span class="value-faded">"A selfie of me with short blonde hair and wearing blue-framed glasses."</span>&#62
-        </p>
+            <p class="about-img child">
+                &#60<span class="tag-faded">img</span> <span class="attribute-faded">src=</span><span class="value-faded">"./pics/Cora-Profile-Pic.jpg"</span> <span class="attribute-faded">alt=</span><span class="value-faded">"A selfie of me with short blonde hair and wearing blue-framed glasses."</span>&#62
+            </p>
 
-        <p class="about-p1 child">
-            &#60<span class="tag-faded">p</span><span class="txt-color-faded">&#62</span><span class="content-faded"> Hi! My name is <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Cora<span class="txt-color-faded">&#60/</span><span class="tag-faded">span<span class="txt-color-faded">&#62</span></span><span class="txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>.
-        </p>
+            <p class="about-p1 child">
+                &#60<span class="tag-faded">p</span><span class="txt-color-faded">&#62</span><span class="content-faded"> Hi! My name is <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Cora<span class="txt-color-faded">&#60/</span><span class="tag-faded">span<span class="txt-color-faded">&#62</span></span><span class="txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>.
+            </p>
 
-        <p class="txt-color-faded about-br1 child">
-            &#60<span class="tag-faded">br</span><span class="txt-color-faded">&#62</span>
-        </p>
+            <p class="txt-color-faded about-br1 child">
+                &#60<span class="tag-faded">br</span><span class="txt-color-faded">&#62</span>
+            </p>
 
-        <p class="txt-color-faded about-br2 child">
-            &#60<span class="tag-faded">br</span><span class="txt-color-faded">&#62</span>
-        </p>
+            <p class="txt-color-faded about-br2 child">
+                &#60<span class="tag-faded">br</span><span class="txt-color-faded">&#62</span>
+            </p>
 
-        <p class="about-p2 child">
-            <span class="txt-color-faded">&#60</span><span class="tag-faded">p<span class="txt-color-faded">&#62</span><span class="content-faded">For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with </span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Java</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="txt-color-faded">,</span><span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">JavaScript</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="txt-color-faded">,</span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">HTML</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span> <span class="txt-color-faded">and</span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">CSS</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="span txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>
-        </p>
-        
-        <p class="about-container-closing child">
-            &#60/<span class="tag-faded">div</span>&#62
-        </p>
+            <p class="about-p2 child">
+                <span class="txt-color-faded">&#60</span><span class="tag-faded">p<span class="txt-color-faded">&#62</span><span class="content-faded">For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with </span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">Java</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="txt-color-faded">,</span><span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">JavaScript</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="txt-color-faded">,</span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">HTML</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span> <span class="txt-color-faded">and</span> <span class="txt-color-faded">&#60</span><span class="tag-faded">span </span><span class="attribute-faded">class=</span><span class="value-faded">"accent-color"</span><span class="txt-color-faded">&#62</span><span class="content-faded">CSS</span><span class="txt-color-faded">&#60/</span><span class="tag-faded">span</span><span class="txt-color-faded">&#62</span><span class="span txt-color-faded">&#60/</span><span class="tag-faded">p</span><span class="txt-color-faded">&#62</span>
+            </p>
+            
+            <p class="about-container-closing child">
+                &#60/<span class="tag-faded">div</span>&#62
+            </p>
 
-        <p data-modal-target="#contact-modal" class="contact-p child pop">
-            <span class="txt-color-bright">&#60</span><span class="tag-bright">button </span><span class="attribute-bright">class=</span><span class="value-bright">"contact-btn"</span><span class="txt-color-bright">&#62</span><span class="content-bright">Contact me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">button<span class="txt-color-bright">&#62</span>
-        </p>
+            <p data-modal-target="#contact-modal" class="contact-p child pop">
+                <span class="txt-color-bright">&#60</span><span class="tag-bright">button </span><span class="attribute-bright">class=</span><span class="value-bright">"contact-btn"</span><span class="txt-color-bright">&#62</span><span class="content-bright">Contact me</span><span class="txt-color-bright">&#60/</span><span class="tag-bright">button<span class="txt-color-bright">&#62</span>
+            </p>
 
-        <p class="body-closing">
-            &#60/<span class="tag-faded">body</span>&#62      
-        </p>
-        
- 
-        <!-- ==========MODALS========== -->
-        <!-- ==========about modal========== -->
-        <div class="modal" id="about-modal">
+            <p class="body-closing">
+                &#60/<span class="tag-faded">body</span>&#62      
+            </p>
+            
+    
+            <!-- ==========MODALS========== -->
+            <!-- ==========about modal========== -->
+            <div class="modal" id="about-modal">
 
-            <div class="modal-head">
-                <img class="profile-pic" src="pics/Cora.png" alt="A selfie of me with short blonde hair and wearing blue-framed glasses.">
-                <button data-close-button class="close-button modal-txt-color">&times;</button>
+                <div class="modal-head">
+                    <img class="profile-pic" src="pics/Cora.png" alt="A selfie of me with short blonde hair and wearing blue-framed glasses.">
+                    <button data-close-button class="close-button modal-txt-color">&times;</button>
+                </div>
+                    
+
+                <div class="modal-body">
+                    Hi! My name is <span class="modal-accent">Cora</span>.
+                    <br>
+                    <br>
+                    For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with <span class="modal-accent">Java</span>, <span class="modal-accent">JavaScript</span>, <span class="modal-accent">HTML</span> and <span class="modal-accent">CSS</span>.
+                </div>
             </div>
-                
+            <div id="overlay"></div>
 
-            <div class="modal-body">
-                Hi! My name is <span class="modal-accent">Cora</span>.
-                <br>
-                <br>
-                For a decade I built my career in marketing and project management, but things took an exciting new turn for me last year, when I decided to start learning how to code. So here I am, a new developer obsessed with <span class="modal-accent">Java</span>, <span class="modal-accent">JavaScript</span>, <span class="modal-accent">HTML</span> and <span class="modal-accent">CSS</span>.
+            <!-- ==========about modal========== -->
+            <div class="modal" id="contact-modal">
+
+                <div class="modal-head">
+                    <h2 class="modal-contact-h2">Get in touch</h2>
+                    <button data-close-button class="close-button modal-txt-color">&times;</button>
+                </div>
+                    
+
+                <div class="modal-body">
+                    <form>
+                        <label for="name">Your name:</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="email">Your email:</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="message">Your message:</label>
+                        <textarea name="message" id="message" rows="10"></textarea>
+
+                        <input type="submit" value="Send" name="submit" id="submit">
+                    </form>
+                </div>
             </div>
+            <div id="overlay"></div>
+
         </div>
-        <div id="overlay"></div>
 
-        <!-- ==========about modal========== -->
-        <div class="modal" id="contact-modal">
+        <script type="text/javascript" src="script.js"></script>
+    </section>
 
-            <div class="modal-head">
-                <h2 class="modal-contact-h2">Get in touch</h2>
-                <button data-close-button class="close-button modal-txt-color">&times;</button>
-            </div>
-                
 
-            <div class="modal-body">
-                <form>
-                    <label for="name">Your name:</label>
-                    <input type="text" name="name" id="name">
+    
 
-                    <label for="email">Your email:</label>
-                    <input type="email" name="email" id="email">
+    <!-- ==========PROJECTS SECTION========== -->
 
-                    <label for="message">Your message:</label>
-                    <textarea name="message" id="message" rows="10"></textarea>
+    <section class="projects-section">
+        projects
+    </section>
 
-                    <input type="submit" value="Send" name="submit" id="submit">
-                </form>
-            </div>
-        </div>
-        <div id="overlay"></div>
 
-    </div>
 
-    <script type="text/javascript" src="script.js"></script>
+
+    <!-- ==========SKILLS SECTION========== -->
+
+    <section class="skills-section">
+        skills
+    </section>
+
+
+
+
+    <!-- ==========CONTACT SECTION========== -->
+
+    <section class="contact-section">
+        contact
+    </section>
+
 </body>
 </html>
