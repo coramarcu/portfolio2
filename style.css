@@ -20,6 +20,14 @@
     --modal-accent: rgb(255 165 0);
 }
 
+/* hiding sections on mobile */
+.projects-section,
+.skills-section,
+.contact-section,
+.menu-section {
+    display: none;
+}
+
 /* ==========BODY========== */
 body {
     margin: 0;
@@ -27,6 +35,8 @@ body {
     color: var(--text-color-faded);
     font-family: 'Courier New', Courier, monospace;
     font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 /* ==========CODE STYLING========== */
@@ -94,16 +104,28 @@ body {
 }
 
 /* ==========NAVBAR MOBILE========== */
-nav {
+.navigation {
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
     background-color: var(--nav-color);
     position: relative; 
 }
 
+.hamburger {
+    border: 0;
+    color: var(--text-color-bright);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-bottom: -0.8rem;
+    background-color: var(--nav-color);
+    padding: .1em .3em;
+    border-radius: 3px;
+}
+
 .nav-ul {
     display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -129,34 +151,7 @@ nav {
     text-decoration: none;
 }
 
-.hamburger {
-    border: 0;
-    color: var(--text-color-bright);
-    font-size: 2rem;
-    cursor: pointer;
-    margin-bottom: -0.8rem;
-    background-color: var(--nav-color);
-    padding: .1em .3em;
-    border-radius: 3px;
-}
 
-/* ==========NAVBAR DESKTOP========== */
-@media screen and (min-width: 481px){ 
-    .hamburger {
-        display: none;
-    }
-
-    .nav-ul {
-        display: flex;
-    }
-
-    .nav-ul li a {
-        display: inline-block;
-        color: var(--text-color-bright);
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-    }
-}
 
 /* ==========GRID========== */
 .grid-container {
@@ -165,7 +160,7 @@ nav {
     grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "file-name file-name file-name file-name"
+        "about-file-name about-file-name about-file-name about-file-name"
         "l1 doctype doctype doctype"
         "l2 html html html"
         "l3 head-opening head-opening head-opening"
@@ -320,8 +315,8 @@ nav {
     grid-area: i16;
 }
 
-.file-name{
-    grid-area: file-name;
+.about-file-name{
+    grid-area: about-file-name;
 }
 
 .doctype{
@@ -388,8 +383,7 @@ nav {
     grid-area: body-closing;
 }
 
-
-p.file-name {
+p.about-file-name {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     /*cancel body margin-right*/ 
@@ -401,11 +395,105 @@ p.file-name {
 
 .icon-html {
     color: var(--modal-accent);
+    font-weight: bold;
+}
+.icon-css {
+    color: var(--tag-color-bright);
+    font-size: 1.2em;
+}
+.icon-js {
+font-weight: 500;
+color: lime;
+}
+.icon-zsh {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 /* add some padding at the top of the grid */
 p.doctype, p.l1.line-number{
     padding-top: 1rem;
+}
+
+
+/* ==========MEDIA QUERIES========== */
+/* ========== min  960px ========== */
+
+@media screen and (min-width: 960px){
+    .navigation {
+        flex-direction: column;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .nav-ul {
+        display: flex;
+    }
+
+    .nav-ul li a {
+        display: inline-block;
+        color: var(--text-color-bright);
+        text-decoration: none;
+        padding: 0;
+    }
+     /* show sections on larger screens */
+     .projects-section,
+     .skills-section,
+     .contact-section,
+     .menu-section {
+         display: inline-block;
+     }
+
+    body {
+        grid-template-columns: clamp(10rem, 10vw, 12rem) repeat(3, 1fr) !important;
+        grid-template-rows: 1fr 25vh !important;
+        grid-template: 
+            "navigation about-section projects-section skills-section"
+            "navigation contact-section contact-section contact-section";
+            font-size: 16px;
+    }
+
+    
+    .navigation {
+        grid-area: navigation;
+    }
+
+    .about-section {
+        grid-area: about-section;
+        border-right: 1px solid var(--text-color-faded);
+        border-bottom: 1px solid var(--text-color-faded);
+    }
+
+    .projects-section {
+        grid-area: projects-section;
+        border-right: 1px solid var(--text-color-faded);
+        border-bottom: 1px solid var(--text-color-faded);
+    }
+
+    .skills-section {
+        grid-area: skills-section;
+        border-bottom: 1px solid var(--text-color-faded);
+    }
+
+    .contact-section {
+        grid-area: contact-section;
+    }
+
+    .about-section,
+    .projects-section,
+    .skills-section {
+        max-height: 73vh;
+        padding-right: .5rem;
+    }
+
+    .about-section,
+    .projects-section,
+    .skills-section,
+    .contact-section {
+        overflow-y: scroll;
+    }
 }
 
 
