@@ -1,0 +1,213 @@
+:root {
+    /* ==========already in style.css========== */
+    --bkg-color: rgb(44, 44, 44);
+    --bkg-color-pop: rgb(80, 80, 80);
+    --nav-color: rgb(49, 49, 49);
+    --file-name-color: rgb(31, 30, 30);
+    --line-number-color: rgb(61, 61, 61);
+    --text-color-faded: rgb(124 121 121);
+    --tag-color-faded: rgb(80 120 167);
+    --attribute-color-faded: rgb(81 146 154);
+    --value-color-faded: rgb(158 122 53);
+    --tag-content-color-faded: rgb(143 143 143);
+    --text-color-bright: rgb(210 210 210);
+    --tag-color-bright: rgb(86 160 255);
+    --attribute-color-bright: rgb(94 236 255);
+    --value-color-bright: rgb(244 195 100);
+    --tag-content-color-bright: rgb(255 255 255);
+    --modal-overlay-color: rgba(10, 0, 0, .5);
+    --modal-txt-color: rgb(245, 222, 179);
+    --modal-accent: rgb(255 165 0);
+    
+    /* ==========specifically for this file========== */
+    --constName-color-faded: rgb(80, 144, 167);
+    --constName-color-bright: rgb(94, 178, 208);
+    --function-color-faded: rgb(245, 222, 179);
+    --function-color-bright: rgb(255, 239, 209);
+    --yellowBracket-color-faded: rgb(208, 157, 4);
+    --yellowBracket-color-bright: rgb(237, 178, 0);
+}
+
+/* ==========CODE STYLING========== */
+.constName-faded {
+    color: var(--constName-color-faded);
+}
+
+.constName-bright {
+    color: var(--constName-color-bright);
+}
+
+.function-faded {
+    color: var(--function-color-faded);
+}
+
+.function-bright {
+    color: var(--function-color-bright);
+}
+
+.yellowBracket-faded {
+    color: var(--yellowBracket-color-faded);
+}
+
+.yellowBracket-bright {
+    color: var(--yellowBracket-color-bright);
+}
+
+/* ==========GRID-2========== */
+.grid-container2 {
+    padding: 0 .5rem 0 0;
+    display: grid;
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "projects-file-name projects-file-name projects-file-name projects-file-name"
+        "l1-projects const1 const1 const1"
+        "l2-projects break1 break1 break1"
+        "l3-projects const2 const2 const2"
+        "l4-projects break2 break2 break2"
+        "l5-projects const3 const3 const3"
+        "l6-projects break3 break3 break3"
+        "l7-projects break4 break4 break4"
+        "l8-projects break5 break5 break5"
+        "l9-projects project1 project1 project1"
+        "l10-projects break6 break6 break6"
+        "l11-projects project2 project2 project2"
+        "l12-projects break7 break7 break7"
+        "l13-projects project3 project3 project3";
+
+}
+
+.projects-file-name {
+    grid-area: projects-file-name;
+}
+
+.l1-projects {
+    grid-area: l1-projects;
+}
+
+.l2-projects {
+    grid-area: l2-projects;
+}
+
+.l3-projects {
+    grid-area: l3-projects;
+}
+
+.l4-projects {
+    grid-area: l4-projects;
+}
+
+.l5-projects {
+    grid-area: l5-projects;
+}
+
+.l6-projects {
+    grid-area: l6-projects;
+}
+
+.l7-projects {
+    grid-area: l7-projects;
+}
+
+.l8-projects {
+    grid-area: l8-projects;
+}
+
+.l9-projects {
+    grid-area: l9-projects;
+}
+
+.l10-projects {
+    grid-area: l10-projects;
+}
+
+.l11-projects {
+    grid-area: l11-projects;
+}
+
+.l12-projects {
+    grid-area: l12-projects;
+}
+
+.l13-projects {
+    grid-area: l13-projects;
+}
+
+
+
+
+
+.break1 {
+    grid-area: break1;
+}
+
+.break2 {
+    grid-area: break2;
+}
+
+.break3 {
+    grid-area: break3;
+}
+
+.break4 {
+    grid-area: break4;
+}
+
+.break5 {
+    grid-area: break5;
+}
+
+.break6 {
+    grid-area: break6;
+}
+
+.break7 {
+    grid-area: break7;
+}
+
+
+
+
+.const1 {
+    grid-area: const1;
+}
+
+.const2 {
+    grid-area: const2;
+}
+
+.const3 {
+    grid-area: const3;
+}
+
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+
+
+
+
+.grid-container2 p.projects-file-name {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    /*cancel body margin-right*/ 
+    margin-right: -0.5rem; 
+    background-color: var(--file-name-color);
+    text-align: center;
+    color: var(--modal-txt-color);
+}
+
+.grid-container2 p {
+    padding: 0.2em 0 0em 0.5em; 
+    margin: -1px 0 0;
+    overflow-wrap: anywhere;
+}
