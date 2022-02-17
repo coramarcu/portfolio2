@@ -1,0 +1,63 @@
+:root {
+    /* ==========already in style.css========== */
+    --bkg-color: rgb(44, 44, 44);
+    --bkg-color-pop: rgb(80, 80, 80);
+    --nav-color: rgb(49, 49, 49);
+    --file-name-color: rgb(31, 30, 30);
+    --line-number-color: rgb(61, 61, 61);
+    --text-color-faded: rgb(124 121 121);
+    --tag-color-faded: rgb(80 120 167);
+    --attribute-color-faded: rgb(81 146 154);
+    --value-color-faded: rgb(158 122 53);
+    --tag-content-color-faded: rgb(143 143 143);
+    --text-color-bright: rgb(210 210 210);
+    --tag-color-bright: rgb(86 160 255);
+    --attribute-color-bright: rgb(94 236 255);
+    --value-color-bright: rgb(244 195 100);
+    --tag-content-color-bright: rgb(255 255 255);
+    --modal-overlay-color: rgba(10, 0, 0, .5);
+    --modal-txt-color: rgb(245, 222, 179);
+    --modal-accent: rgb(255 165 0);
+    
+    /* ==========specifically for this file========== */
+    --constName-color-faded: rgb(80, 144, 167);
+    --function-color-faded: rgb(245, 222, 179);
+    --yellowBracket-color-faded: rgb(208, 157, 4);
+}
+
+/* ==========CODE STYLING========== */
+.constName-faded {
+    color: var(--constName-color-faded);
+}
+
+.function-faded {
+    color: var(--function-color-faded);
+}
+
+.yellowBracket-faded {
+    color: var(--yellowBracket-color-faded);
+}
+
+/* ==========GRID-2========== */
+.grid-container2 {
+    padding: 0 .5rem 0 0;
+    display: grid;
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "projects-file-name projects-file-name projects-file-name projects-file-name"
+        "l1-projects project1 project1 project1"
+
+}
+
+.projects-file-name {
+    grid-area: projects-file-name;
+}
+
+.l1-projects {
+    grid-area: l1-projects;
+}
+
+.project1 {
+    grid-area: project1;
+}
