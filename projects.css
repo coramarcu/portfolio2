@@ -61,3 +61,19 @@
 .project1 {
     grid-area: project1;
 }
+
+.grid-container2 p.projects-file-name {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    /*cancel body margin-right*/ 
+    margin-right: -0.5rem; 
+    background-color: var(--file-name-color);
+    text-align: center;
+    color: var(--modal-txt-color);
+}
+
+.grid-container2 p {
+    padding: 0.2em 0 0em 0.5em; 
+    margin: -1px 0 0;
+    overflow-wrap: anywhere;
+}
