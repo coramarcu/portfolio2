@@ -30,7 +30,7 @@ closeModalButtons.forEach(button => {
 
 function openModal(modal) {
     if(modal == null) {
-        console.log("returned null")
+        console.log('returned null')
         return
     }
     modal.classList.add('active')

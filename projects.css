@@ -30,10 +30,17 @@
     --pinkBracket-color-bright: rgb(252, 32, 222);
     --blueBracket-color-faded: rgb(70, 61, 206);
     --blueBracket-color-bright: rgb(17, 0, 255);
+    --keyword-color-faded: rgb(179, 32, 159);
+
 
 }
 
 /* ==========CODE STYLING========== */
+.indent-noBorder {
+    margin-left: .5rem !important;
+    margin-top: -1rem;
+}
+
 .constName-faded {
     color: var(--constName-color-faded);
 }
@@ -64,6 +71,10 @@
 
 .blueBracket-faded {
     color: var(--blueBracket-color-faded);
+}
+
+.keyword-faded {
+    color: var(--keyword-color-faded);
 }
 
 /* ==========GRID-2========== */
@@ -102,7 +113,22 @@
         "l26-projects ip8 ip9 constModal2"
         "l27-projects ip10 ip11 closeModal"
         "l28-projects ip12 closeBrackets3 closeBrackets3"
-        "l29-projects closeBrackets4 closeBrackets4 closeBrackets4";
+        "l29-projects closeBrackets4 closeBrackets4 closeBrackets4"
+        "l30-projects break12 break12 break12"
+        "l31-projects function1 function1 function1"
+        "l32-projects ip13 if1 if1"
+        "l33-projects ip14 ip15 console"
+        "l34-projects ip16 ip17 return1"
+        "l35-projects ip18 closeBrackets5 closeBrackets5"
+        "l36-projects ip19 modClassList1 modClassList1"
+        "l37-projects ip20 overlayClassList1 overlayClassList1"
+        "l38-projects closeBrackets6 closeBrackets6 closeBrackets6"
+        "l39-projects break13 break13 break13"
+        "l40-projects function2 function2 function2"
+        "l41-projects ip21 if2 if2"
+        "l42-projects ip22 modClassList2 modClassList2"
+        "l43-projects ip23 overlayClassList2 overlayClassList2"
+        "l44-projects closeBrackets7 closeBrackets7 closeBrackets7";
 
 }
 
@@ -226,6 +252,66 @@
     grid-area: l29-projects;
 }
 
+.l30-projects {
+    grid-area: l30-projects;
+}
+
+.l31-projects {
+    grid-area: l31-projects;
+}
+
+.l32-projects {
+    grid-area: l32-projects;
+}
+
+.l33-projects {
+    grid-area: l33-projects;
+}
+
+.l34-projects {
+    grid-area: l34-projects;
+}
+
+.l35-projects {
+    grid-area: l35-projects;
+}
+
+.l36-projects {
+    grid-area: l36-projects;
+}
+
+.l37-projects {
+    grid-area: l37-projects;
+}
+
+.l38-projects {
+    grid-area: l38-projects;
+}
+
+.l39-projects {
+    grid-area: l39-projects;
+}
+
+.l40-projects {
+    grid-area: l40-projects;
+}
+
+.l41-projects {
+    grid-area: l41-projects;
+}
+
+.l42-projects {
+    grid-area: l42-projects;
+}
+
+.l43-projects {
+    grid-area: l43-projects;
+}
+
+.l44-projects {
+    grid-area: l44-projects;
+}
+
 
 
 
@@ -277,6 +363,51 @@
     grid-area: ip12;
 }
 
+.ip13 {
+    grid-area: ip13;
+}
+
+.ip14 {
+    grid-area: ip14;
+}
+
+.ip15 {
+    grid-area: ip15;
+}
+
+.ip16 {
+    grid-area: ip16;
+}
+
+.ip17 {
+    grid-area: ip17;
+}
+
+.ip18 {
+    grid-area: ip18;
+}
+
+.ip19 {
+    grid-area: ip19;
+}
+
+.ip20 {
+    grid-area: ip20;
+}
+
+.ip21 {
+    grid-area: ip21;
+}
+
+.ip22 {
+    grid-area: ip22;
+}
+
+.ip23 {
+    grid-area: ip23;
+}
+
+
 
 
 .break1 {
@@ -322,6 +453,16 @@
 .break11 {
     grid-area: break11;
 }
+
+.break12 {
+    grid-area: break12;
+}
+
+.break13 {
+    grid-area: break13;
+}
+
+
 
 
 .const1 {
@@ -396,6 +537,58 @@
     grid-area: closeBrackets4;
 }
 
+.function1 {
+    grid-area: function1;
+}
+
+.if1 {
+    grid-area: if1;
+}
+
+.console {
+    grid-area: console;
+}
+
+.return1 {
+    grid-area: return1;
+}
+
+.closeBrackets5 {
+    grid-area: closeBrackets5;
+}
+
+.modClassList1 {
+    grid-area: modClassList1;
+}
+
+.overlayClassList1 {
+    grid-area: overlayClassList1;
+}
+
+.closeBrackets6 {
+    grid-area: closeBrackets6;
+}
+
+.function2 {
+    grid-area: function2;
+}
+
+.if2 {
+    grid-area: if2;
+}
+
+.modClassList2 {
+    grid-area: modClassList2;
+}
+
+.overlayClassList2 {
+    grid-area: overlayClassList2;
+}
+
+.closeBrackets7 {
+    grid-area: closeBrackets7;
+}
+
 
 
 
@@ -414,4 +607,9 @@
     padding: 0.2em 0 0em 0.5em; 
     margin: -1px 0 0;
     overflow-wrap: anywhere;
+}
+
+/* add some padding at the top of the grid */
+p.const1, p.l1-projects.line-number{
+    padding-top: 1rem;
 }
