@@ -8,12 +8,12 @@
     --text-color-faded: rgb(124 121 121);
     --tag-color-faded: rgb(80 120 167);
     --attribute-color-faded: rgb(81 146 154);
-    --value-color-faded: rgb(158 122 53);
+    --value-color-faded: rgb(158, 90, 53);
     --tag-content-color-faded: rgb(143 143 143);
     --text-color-bright: rgb(210 210 210);
     --tag-color-bright: rgb(86 160 255);
     --attribute-color-bright: rgb(94 236 255);
-    --value-color-bright: rgb(244 195 100);
+    --value-color-bright: rgb(244, 158, 100);
     --tag-content-color-bright: rgb(255 255 255);
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: rgb(245, 222, 179);
@@ -26,9 +26,21 @@
     --function-color-bright: rgb(255, 239, 209);
     --yellowBracket-color-faded: rgb(208, 157, 4);
     --yellowBracket-color-bright: rgb(237, 178, 0);
+    --pinkBracket-color-faded: rgb(179, 32, 159);
+    --pinkBracket-color-bright: rgb(252, 32, 222);
+    --blueBracket-color-faded: rgb(70, 61, 206);
+    --blueBracket-color-bright: rgb(17, 0, 255);
+    --keyword-color-faded: rgb(179, 32, 159);
+
+
 }
 
 /* ==========CODE STYLING========== */
+.indent-noBorder {
+    margin-left: .5rem !important;
+    margin-top: -1rem;
+}
+
 .constName-faded {
     color: var(--constName-color-faded);
 }
@@ -53,6 +65,18 @@
     color: var(--yellowBracket-color-bright);
 }
 
+.pinkBracket-faded {
+    color: var(--pinkBracket-color-faded);
+}
+
+.blueBracket-faded {
+    color: var(--blueBracket-color-faded);
+}
+
+.keyword-faded {
+    color: var(--keyword-color-faded);
+}
+
 /* ==========GRID-2========== */
 .grid-container2 {
     padding: 0 .5rem 0 0;
@@ -73,7 +97,38 @@
         "l10-projects break6 break6 break6"
         "l11-projects project2 project2 project2"
         "l12-projects break7 break7 break7"
-        "l13-projects project3 project3 project3";
+        "l13-projects project3 project3 project3"
+        "l14-projects break8 break8 break8"
+        "l15-projects break9 break9 break9"
+        "l16-projects breal10 break10 break10"
+        "l17-projects openProjBtn openProjBtn openProjBtn"
+        "l18-projects ip1 button1 button1"
+        "l19-projects ip2 ip3 constModal1"
+        "l20-projects ip4 ip5 openModal"
+        "l21-projects ip6 closeBrackets1 closeBrackets1"
+        "l22-projects closeBrackets2 closeBrackets2 closeBrackets2"
+        "l23-projects break11 break11 break11"
+        "l24-projects closeModBtn closeModBtn closeModBtn"
+        "l25-projects ip7 button2 button2"
+        "l26-projects ip8 ip9 constModal2"
+        "l27-projects ip10 ip11 closeModal"
+        "l28-projects ip12 closeBrackets3 closeBrackets3"
+        "l29-projects closeBrackets4 closeBrackets4 closeBrackets4"
+        "l30-projects break12 break12 break12"
+        "l31-projects function1 function1 function1"
+        "l32-projects ip13 if1 if1"
+        "l33-projects ip14 ip15 console"
+        "l34-projects ip16 ip17 return1"
+        "l35-projects ip18 closeBrackets5 closeBrackets5"
+        "l36-projects ip19 modClassList1 modClassList1"
+        "l37-projects ip20 overlayClassList1 overlayClassList1"
+        "l38-projects closeBrackets6 closeBrackets6 closeBrackets6"
+        "l39-projects break13 break13 break13"
+        "l40-projects function2 function2 function2"
+        "l41-projects ip21 if2 if2"
+        "l42-projects ip22 modClassList2 modClassList2"
+        "l43-projects ip23 overlayClassList2 overlayClassList2"
+        "l44-projects closeBrackets7 closeBrackets7 closeBrackets7";
 
 }
 
@@ -133,6 +188,224 @@
     grid-area: l13-projects;
 }
 
+.l14-projects {
+    grid-area: l14-projects;
+}
+
+.l15-projects {
+    grid-area: l15-projects;
+}
+
+.l16-projects {
+    grid-area: l16-projects;
+}
+
+.l17-projects {
+    grid-area: l17-projects;
+}
+
+.l18-projects {
+    grid-area: l18-projects;
+}
+
+.l19-projects {
+    grid-area: l19-projects;
+}
+
+.l20-projects {
+    grid-area: l20-projects;
+}
+
+.l21-projects {
+    grid-area: l21-projects;
+}
+
+.l22-projects {
+    grid-area: l22-projects;
+}
+
+.l23-projects {
+    grid-area: l23-projects;
+}
+
+.l24-projects {
+    grid-area: l24-projects;
+}
+
+.l25-projects {
+    grid-area: l25-projects;
+}
+
+.l26-projects {
+    grid-area: l26-projects;
+}
+
+.l27-projects {
+    grid-area: l27-projects;
+}
+
+.l28-projects {
+    grid-area: l28-projects;
+}
+
+.l29-projects {
+    grid-area: l29-projects;
+}
+
+.l30-projects {
+    grid-area: l30-projects;
+}
+
+.l31-projects {
+    grid-area: l31-projects;
+}
+
+.l32-projects {
+    grid-area: l32-projects;
+}
+
+.l33-projects {
+    grid-area: l33-projects;
+}
+
+.l34-projects {
+    grid-area: l34-projects;
+}
+
+.l35-projects {
+    grid-area: l35-projects;
+}
+
+.l36-projects {
+    grid-area: l36-projects;
+}
+
+.l37-projects {
+    grid-area: l37-projects;
+}
+
+.l38-projects {
+    grid-area: l38-projects;
+}
+
+.l39-projects {
+    grid-area: l39-projects;
+}
+
+.l40-projects {
+    grid-area: l40-projects;
+}
+
+.l41-projects {
+    grid-area: l41-projects;
+}
+
+.l42-projects {
+    grid-area: l42-projects;
+}
+
+.l43-projects {
+    grid-area: l43-projects;
+}
+
+.l44-projects {
+    grid-area: l44-projects;
+}
+
+
+
+
+.ip1 {
+    grid-area: ip1;
+}
+
+.ip2 {
+    grid-area: ip2;
+}
+
+.ip3 {
+    grid-area: ip3;
+}
+
+.ip4 {
+    grid-area: ip4;
+}
+
+.ip5 {
+    grid-area: ip5;
+}
+
+.ip6 {
+    grid-area: ip6;
+}
+
+.ip7 {
+    grid-area: ip7;
+}
+
+.ip8 {
+    grid-area: ip8;
+}
+
+.ip9 {
+    grid-area: ip9;
+}
+
+.ip10 {
+    grid-area: ip10;
+}
+
+.ip11 {
+    grid-area: ip11;
+}
+
+.ip12 {
+    grid-area: ip12;
+}
+
+.ip13 {
+    grid-area: ip13;
+}
+
+.ip14 {
+    grid-area: ip14;
+}
+
+.ip15 {
+    grid-area: ip15;
+}
+
+.ip16 {
+    grid-area: ip16;
+}
+
+.ip17 {
+    grid-area: ip17;
+}
+
+.ip18 {
+    grid-area: ip18;
+}
+
+.ip19 {
+    grid-area: ip19;
+}
+
+.ip20 {
+    grid-area: ip20;
+}
+
+.ip21 {
+    grid-area: ip21;
+}
+
+.ip22 {
+    grid-area: ip22;
+}
+
+.ip23 {
+    grid-area: ip23;
+}
 
 
 
@@ -165,6 +438,30 @@
     grid-area: break7;
 }
 
+.break8 {
+    grid-area: break8;
+}
+
+.break9 {
+    grid-area: break9;
+}
+
+.break10 {
+    grid-area: break10;
+}
+
+.break11 {
+    grid-area: break11;
+}
+
+.break12 {
+    grid-area: break12;
+}
+
+.break13 {
+    grid-area: break13;
+}
+
 
 
 
@@ -192,6 +489,106 @@
     grid-area: project3;
 }
 
+.openProjBtn {
+    grid-area: openProjBtn;
+}
+
+.button1 {
+    grid-area: button1;
+}
+
+.constModal1 {
+    grid-area: constModal1;
+}
+
+.openModal {
+    grid-area: openModal;
+}
+
+.closeBrackets1 {
+    grid-area: closeBrackets1;
+}
+
+.closeBrackets2 {
+    grid-area: closeBrackets2;
+}
+
+.closeModBtn {
+    grid-area: closeModBtn;
+}
+
+.button2 {
+    grid-area: button2;
+}
+
+.constModal2 {
+    grid-area: constModal2;
+}
+
+.closeModal {
+    grid-area: closeModal;
+}
+
+.closeBrackets3 {
+    grid-area: closeBrackets3;
+}
+
+.closeBrackets4 {
+    grid-area: closeBrackets4;
+}
+
+.function1 {
+    grid-area: function1;
+}
+
+.if1 {
+    grid-area: if1;
+}
+
+.console {
+    grid-area: console;
+}
+
+.return1 {
+    grid-area: return1;
+}
+
+.closeBrackets5 {
+    grid-area: closeBrackets5;
+}
+
+.modClassList1 {
+    grid-area: modClassList1;
+}
+
+.overlayClassList1 {
+    grid-area: overlayClassList1;
+}
+
+.closeBrackets6 {
+    grid-area: closeBrackets6;
+}
+
+.function2 {
+    grid-area: function2;
+}
+
+.if2 {
+    grid-area: if2;
+}
+
+.modClassList2 {
+    grid-area: modClassList2;
+}
+
+.overlayClassList2 {
+    grid-area: overlayClassList2;
+}
+
+.closeBrackets7 {
+    grid-area: closeBrackets7;
+}
+
 
 
 
@@ -210,4 +607,9 @@
     padding: 0.2em 0 0em 0.5em; 
     margin: -1px 0 0;
     overflow-wrap: anywhere;
+}
+
+/* add some padding at the top of the grid */
+p.const1, p.l1-projects.line-number{
+    padding-top: 1rem;
 }
