@@ -8,12 +8,12 @@
     --text-color-faded: rgb(124 121 121);
     --tag-color-faded: rgb(80 120 167);
     --attribute-color-faded: rgb(81 146 154);
-    --value-color-faded: rgb(158 122 53);
+    --value-color-faded: rgb(158, 90, 53);
     --tag-content-color-faded: rgb(143 143 143);
     --text-color-bright: rgb(210 210 210);
     --tag-color-bright: rgb(86 160 255);
     --attribute-color-bright: rgb(94 236 255);
-    --value-color-bright: rgb(244 195 100);
+    --value-color-bright: rgb(244, 158, 100);
     --tag-content-color-bright: rgb(255 255 255);
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: rgb(245, 222, 179);
@@ -26,6 +26,11 @@
     --function-color-bright: rgb(255, 239, 209);
     --yellowBracket-color-faded: rgb(208, 157, 4);
     --yellowBracket-color-bright: rgb(237, 178, 0);
+    --pinkBracket-color-faded: rgb(179, 32, 159);
+    --pinkBracket-color-bright: rgb(252, 32, 222);
+    --blueBracket-color-faded: rgb(70, 61, 206);
+    --blueBracket-color-bright: rgb(17, 0, 255);
+
 }
 
 /* ==========CODE STYLING========== */
@@ -53,6 +58,14 @@
     color: var(--yellowBracket-color-bright);
 }
 
+.pinkBracket-faded {
+    color: var(--pinkBracket-color-faded);
+}
+
+.blueBracket-faded {
+    color: var(--blueBracket-color-faded);
+}
+
 /* ==========GRID-2========== */
 .grid-container2 {
     padding: 0 .5rem 0 0;
@@ -73,7 +86,23 @@
         "l10-projects break6 break6 break6"
         "l11-projects project2 project2 project2"
         "l12-projects break7 break7 break7"
-        "l13-projects project3 project3 project3";
+        "l13-projects project3 project3 project3"
+        "l14-projects break8 break8 break8"
+        "l15-projects break9 break9 break9"
+        "l16-projects breal10 break10 break10"
+        "l17-projects openProjBtn openProjBtn openProjBtn"
+        "l18-projects ip1 button1 button1"
+        "l19-projects ip2 ip3 constModal1"
+        "l20-projects ip4 ip5 openModal"
+        "l21-projects ip6 closeBrackets1 closeBrackets1"
+        "l22-projects closeBrackets2 closeBrackets2 closeBrackets2"
+        "l23-projects break11 break11 break11"
+        "l24-projects closeModBtn closeModBtn closeModBtn"
+        "l25-projects ip7 button2 button2"
+        "l26-projects ip8 ip9 constModal2"
+        "l27-projects ip10 ip11 closeModal"
+        "l28-projects ip12 closeBrackets3 closeBrackets3"
+        "l29-projects closeBrackets4 closeBrackets4 closeBrackets4";
 
 }
 
@@ -133,7 +162,120 @@
     grid-area: l13-projects;
 }
 
+.l14-projects {
+    grid-area: l14-projects;
+}
 
+.l15-projects {
+    grid-area: l15-projects;
+}
+
+.l16-projects {
+    grid-area: l16-projects;
+}
+
+.l17-projects {
+    grid-area: l17-projects;
+}
+
+.l18-projects {
+    grid-area: l18-projects;
+}
+
+.l19-projects {
+    grid-area: l19-projects;
+}
+
+.l20-projects {
+    grid-area: l20-projects;
+}
+
+.l21-projects {
+    grid-area: l21-projects;
+}
+
+.l22-projects {
+    grid-area: l22-projects;
+}
+
+.l23-projects {
+    grid-area: l23-projects;
+}
+
+.l24-projects {
+    grid-area: l24-projects;
+}
+
+.l25-projects {
+    grid-area: l25-projects;
+}
+
+.l26-projects {
+    grid-area: l26-projects;
+}
+
+.l27-projects {
+    grid-area: l27-projects;
+}
+
+.l28-projects {
+    grid-area: l28-projects;
+}
+
+.l29-projects {
+    grid-area: l29-projects;
+}
+
+
+
+
+.ip1 {
+    grid-area: ip1;
+}
+
+.ip2 {
+    grid-area: ip2;
+}
+
+.ip3 {
+    grid-area: ip3;
+}
+
+.ip4 {
+    grid-area: ip4;
+}
+
+.ip5 {
+    grid-area: ip5;
+}
+
+.ip6 {
+    grid-area: ip6;
+}
+
+.ip7 {
+    grid-area: ip7;
+}
+
+.ip8 {
+    grid-area: ip8;
+}
+
+.ip9 {
+    grid-area: ip9;
+}
+
+.ip10 {
+    grid-area: ip10;
+}
+
+.ip11 {
+    grid-area: ip11;
+}
+
+.ip12 {
+    grid-area: ip12;
+}
 
 
 
@@ -165,7 +307,21 @@
     grid-area: break7;
 }
 
+.break8 {
+    grid-area: break8;
+}
 
+.break9 {
+    grid-area: break9;
+}
+
+.break10 {
+    grid-area: break10;
+}
+
+.break11 {
+    grid-area: break11;
+}
 
 
 .const1 {
@@ -190,6 +346,54 @@
 
 .project3 {
     grid-area: project3;
+}
+
+.openProjBtn {
+    grid-area: openProjBtn;
+}
+
+.button1 {
+    grid-area: button1;
+}
+
+.constModal1 {
+    grid-area: constModal1;
+}
+
+.openModal {
+    grid-area: openModal;
+}
+
+.closeBrackets1 {
+    grid-area: closeBrackets1;
+}
+
+.closeBrackets2 {
+    grid-area: closeBrackets2;
+}
+
+.closeModBtn {
+    grid-area: closeModBtn;
+}
+
+.button2 {
+    grid-area: button2;
+}
+
+.constModal2 {
+    grid-area: constModal2;
+}
+
+.closeModal {
+    grid-area: closeModal;
+}
+
+.closeBrackets3 {
+    grid-area: closeBrackets3;
+}
+
+.closeBrackets4 {
+    grid-area: closeBrackets4;
 }
 
 

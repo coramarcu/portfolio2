@@ -8,12 +8,12 @@
     --text-color-faded: rgb(124 121 121);
     --tag-color-faded: rgb(80 120 167);
     --attribute-color-faded: rgb(81 146 154);
-    --value-color-faded: rgb(158 122 53);
+    --value-color-faded: rgb(158, 90, 53);
     --tag-content-color-faded: rgb(143 143 143);
     --text-color-bright: rgb(210 210 210);
     --tag-color-bright: rgb(86 160 255);
     --attribute-color-bright: rgb(94 236 255);
-    --value-color-bright: rgb(244 195 100);
+    --tag-content-color-bright: rgb(255 255 255);
     --tag-content-color-bright: rgb(255 255 255);
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: wheat;
