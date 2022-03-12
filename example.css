@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.skill {
+    margin-bottom: .5rem;
+    width: clamp(15rem, 80vw, 50rem);
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+#technical-skills {
+    background-color: var(--bkg-color-pop);
+    color: var(--modal-accent)
+}
+
+#soft-skills {
+    background-color: var(--bkg-color);
+    color: var(--modal-txt-color);
+}
+
+#other-skills {
+    background-color: var(--modal-accent);
+    color: var(--bkg-color)
+}

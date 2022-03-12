@@ -1,0 +1,470 @@
+:root {
+    /* ==========already in style.css========== */
+    --bkg-color: rgb(44, 44, 44);
+    --bkg-color-pop: rgb(80, 80, 80);
+    --nav-color: rgb(49, 49, 49);
+    --file-name-color: rgb(31, 30, 30);
+    --line-number-color: rgb(61, 61, 61);
+    --text-color-faded: rgb(124 121 121);
+    --tag-color-faded: rgb(80 120 167);
+    --attribute-color-faded: rgb(81 146 154);
+    --value-color-faded: rgb(158, 90, 53);
+    --tag-content-color-faded: rgb(143 143 143);
+    --text-color-bright: rgb(210 210 210);
+    --tag-color-bright: rgb(86 160 255);
+    --attribute-color-bright: rgb(94 236 255);
+    --value-color-bright: rgb(244, 158, 100);
+    --tag-content-color-bright: rgb(255 255 255);
+    --modal-overlay-color: rgba(10, 0, 0, .5);
+    --modal-txt-color: rgb(245, 222, 179);
+    --modal-accent: rgb(255 165 0);
+    
+    --function-color-faded: rgb(245, 222, 179);
+    --function-color-bright: rgb(255, 239, 209);
+    --yellowBracket-color-faded: rgb(208, 157, 4);
+    --yellowBracket-color-bright: rgb(237, 178, 0);
+    --pinkBracket-color-bright: rgb(252, 32, 222);
+    --blueBracket-color-faded: rgb(70, 61, 206);
+
+    --units-color-faded: rgb(84, 133, 84);
+    --units-color-bright: rgb(97, 170, 97);
+}
+
+
+
+
+
+/* ==========CODE STYLING========== */
+
+.yellowBracket-faded {
+    color: var(--yellowBracket-color-faded);
+}
+
+.yellowBracket-bright {
+    color: var(--yellowBracket-color-bright);
+}
+
+.pinkBracket-faded {
+    color: var(--pinkBracket-color-faded);
+}
+
+.units-faded {
+    color: var(--units-color-faded);
+}
+
+.units-faded {
+    color: var(--units-color-bright);
+}
+
+/* ==========GRID-2========== */
+.grid-container3 {
+    padding: 0 .5rem 0 0;
+    display: grid;
+    grid-template-columns: clamp(1.5rem, 10vw, 2.2rem) 1.5rem 1.5rem 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "skills-file-name skills-file-name skills-file-name skills-file-name"
+        "l1-skills container container container"
+        "l2-skills is1 display display"
+        "l3-skills is2 flex flex"
+        "l4-skills is3 justify justify"
+        "l5-skills is4 align align"
+        "l6-skills is5 padding padding"
+        "l7-skills closeBracket1 closeBracket1 closeBracket1"
+        "l8-skills breakSkills1 breakSkills1 breakSkills1"
+        "l9-skills skill skill skill"
+        "l10-skills is6 margin1 margin1"
+        "l11-skills is8 width width"
+        "l12-skills closeBracket2 closeBracket2 closeBracket2"
+        "l13-skills breakSkills2 breakSkills2 breakSkills2"
+        "l14-skills skill-last skill-last skill-last"
+        "l15-skills is9 margin2 margin2"
+        "l16-skills closeBracket3 closeBracket3 closeBracket3"
+        "l17-skills breakSkills3 breakSkills3 breakSkills3"
+        "l18-skills technical technical technical"
+        "l19-skills is10 background1 background1"
+        "l20-skills is11 color1 color1"
+        "l21-skills closeBracket4 closeBracket4 closeBracket4"
+        "l22-skills breakSkills4 breakSkills4 breakSkills4"
+        "l23-skills soft soft soft"
+        "l24-skills is12 background2 background2"
+        "l25-skills is13 color2 color2"
+        "l26-skills closeBracket5 closeBracket5 closeBracket5"
+        "l27-skills breakSkills5 breakSkills5 breakSkills5"
+        "l28-skills other other other"
+        "l29-skills is14 background3 background3"
+        "l30-skills is15 color3 color3"
+        "l31-skills closeBracket6 closeBracket6 closeBracket6";
+}
+
+.skills-file-name {
+    grid-area: skills-file-name;
+}
+
+.l1-skills {
+    grid-area: l1-skills;
+}
+
+.l2-skills {
+    grid-area: l2-skills;
+}
+
+.l3-skills {
+    grid-area: l3-skills;
+}
+
+.l4-skills {
+    grid-area: l4-skills;
+}
+
+.l5-skills {
+    grid-area: l5-skills;
+}
+
+.l6-skills {
+    grid-area: l6-skills;
+}
+
+.l7-skills {
+    grid-area: l7-skills;
+}
+
+.l8-skills {
+    grid-area: l8-skills;
+}
+
+.l9-skills {
+    grid-area: l9-skills;
+}
+
+.l10-skills {
+    grid-area: l10-skills;
+}
+
+.l11-skills {
+    grid-area: l11-skills;
+}
+
+.l12-skills {
+    grid-area: l12-skills;
+}
+
+.l13-skills {
+    grid-area: l13-skills;
+}
+
+.l14-skills {
+    grid-area: l14-skills;
+}
+
+.l15-skills {
+    grid-area: l15-skills;
+}
+
+.l16-skills {
+    grid-area: l16-skills;
+}
+
+.l17-skills {
+    grid-area: l17-skills;
+}
+
+.l18-skills {
+    grid-area: l18-skills;
+}
+
+.l19-skills {
+    grid-area: l19-skills;
+}
+
+.l20-skills {
+    grid-area: l20-skills;
+}
+
+.l21-skills {
+    grid-area: l21-skills;
+}
+
+.l22-skills {
+    grid-area: l22-skills;
+}
+
+.l23-skills {
+    grid-area: l23-skills;
+}
+
+.l24-skills {
+    grid-area: l24-skills;
+}
+
+.l25-skills {
+    grid-area: l25-skills;
+}
+
+.l26-skills {
+    grid-area: l26-skills;
+}
+
+.l27-skills {
+    grid-area: l27-skills;
+}
+
+.l28-skills {
+    grid-area: l28-skills;
+}
+
+.l29-skills {
+    grid-area: l29-skills;
+}
+
+.l30-skills {
+    grid-area: l30-skills;
+}
+
+.l31-skills {
+    grid-area: l31-skills;
+}
+
+
+
+
+
+.is1 {
+    grid-area: is1;
+}
+
+.is2 {
+    grid-area: is2;
+}
+
+.is3 {
+    grid-area: is3;
+}
+
+.is4 {
+    grid-area: is4;
+}
+
+.is5 {
+    grid-area: is5;
+}
+
+.is6 {
+    grid-area: is6;
+}
+
+.is7 {
+    grid-area: is7;
+}
+
+.is8 {
+    grid-area: is8;
+}
+
+.is9 {
+    grid-area: is9;
+}
+
+.is10 {
+    grid-area: is10;
+}
+
+.is11 {
+    grid-area: is11;
+}
+
+.is12 {
+    grid-area: is12;
+}
+
+.is13 {
+    grid-area: is13;
+}
+
+.is14 {
+    grid-area: is14;
+}
+
+.is15 {
+    grid-area: is15;
+}
+
+
+
+
+
+.container {
+    grid-area: container;
+}
+
+.display {
+    grid-area: display;
+}
+
+.flex {
+    grid-area: flex;
+}
+
+.justify {
+    grid-area: justify;
+}
+
+.align {
+    grid-area: align;
+}
+
+.padding {
+    grid-area: padding;
+}
+
+.closeBracket1 {
+    grid-area: closeBracket1;
+}
+
+.breakSkills1 {
+    grid-area: breakSkills1;
+}
+
+.skill {
+    grid-area: skill;
+}
+
+.margin1 {
+    grid-area: margin1;
+}
+
+.width {
+    grid-area: width;
+}
+
+.closeBracket2 {
+    grid-area: closeBracket2;
+}
+
+.breakSkills2 {
+    grid-area: breakSkills2;
+}
+
+.skill-last {
+    grid-area: skill-last;
+}
+
+.margin2 {
+    grid-area: margin2;
+}
+
+.closeBracket3 {
+    grid-area: closeBracket3;
+}
+
+.breakSkills3 {
+    grid-area: breakSkills3;
+}
+
+.technical {
+    grid-area: technical;
+}
+
+.background1 {
+    grid-area: background1;
+}
+
+.color1 {
+    grid-area: color1;
+}
+
+.closeBracket4 {
+    grid-area: closeBracket4;
+}
+
+.breakSkills4 {
+    grid-area: breakSkills4;
+}
+
+.soft {
+    grid-area: soft;
+}
+
+.background2 {
+    grid-area: background2;
+}
+
+.color2 {
+    grid-area: color2;
+}
+
+.closeBracket5 {
+    grid-area: closeBracket5;
+}
+
+.breakSkills5 {
+    grid-area: breakSkills5;
+}
+
+.other {
+    grid-area: other;
+}
+
+.background3 {
+    grid-area: background3;
+}
+
+.color3 {
+    grid-area: color3;
+}
+
+.closeBracket6 {
+    grid-area: closeBracket6;
+}
+
+
+
+
+
+.grid-container3 p.skills-file-name {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    /*cancel body margin-right*/ 
+    margin-right: -0.5rem; 
+    background-color: var(--file-name-color);
+    text-align: center;
+    color: var(--modal-txt-color);
+}
+
+.grid-container3 p {
+    padding: 0.2em 0 0em 0.5em;
+    margin: -1px 0 0;
+    overflow-wrap: anywhere;
+}
+
+.icon-css {
+    font-weight: bold;
+}
+
+
+
+
+
+/* ==========skills-modals========== */
+.modal-body-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal-head.modal-head-skill {
+    margin-bottom: 0;
+}
+
+.modal-head-skill h2 {
+    margin-top: 0;
+}
+
+.ul-skills li {
+    margin-bottom: .5em;
+}
+
+.ul-skills li:last-of-type {
+    margin-bottom: 0;
+}
