@@ -18,6 +18,9 @@
     --modal-overlay-color: rgba(10, 0, 0, .5);
     --modal-txt-color: wheat;
     --modal-accent: rgb(255 165 0);
+    --terminal-accent-color-bright: rgb(223, 69, 69);
+    --terminal-accent-color-faded: rgb(163, 22, 22);
+    --terminal-arrow-color: rgb(71, 158, 14);
 }
 
 /* hiding sections on mobile */
@@ -92,6 +95,18 @@ body {
 
 .modal-txt-color {
     color: var(--modal-txt-color);
+}
+
+.terminal-accent-faded {
+    color: var(--terminal-accent-color-faded);
+}
+
+.terminal-accent-bright {
+    color: var(--terminal-accent-color-bright);
+}
+
+.terminal-arrow {
+    color: var(--terminal-arrow-color);
 }
 
 .pop {
@@ -602,4 +617,16 @@ p.doctype, p.l1.line-number{
 }
 
 
+
+
+/* ==========CONTACT SECTION========== */
+
+
+.contact-section p:first-of-type {
+    margin-top: .5em;
+}
+
+.contact-section p {
+    margin: 0;
+}
 
